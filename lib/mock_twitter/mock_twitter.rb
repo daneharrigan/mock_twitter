@@ -10,19 +10,21 @@ module MockTwitter
     end
 
     def response(path)
-      tmpl_path = file_path(path.to_s)
+      return Response.body(path)
+      #tmpl_path = file_path(path.to_s)
 
-      if File.exists? tmpl_path
-        file = File.open(tmpl_path)
-        output = ''
-        file.each { |line| output << line }
-        return output
-      else
-        return 
-      end
+      #if File.exists? tmpl_path
+      #  file = File.open(tmpl_path)
+      #  output = ''
+      #  file.each { |line| output << line }
+      #  return output
+      #else
+      #  return 
+      #end
     end
 
-    def template_path(path)
+    def template_path(path=nil)
+      return @template_path if path.nil?
       @template_path = path
     end
 
