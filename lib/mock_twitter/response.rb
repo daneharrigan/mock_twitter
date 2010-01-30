@@ -6,13 +6,14 @@ module MockTwitter
       in_reply_to_screen_name = MockTwitter.reply_to
       name = MockTwitter.display_name
       
-      tmpl = YAML.load_file file_path(path)
-      return case @format
+      output = YAML.load_file file_path(path)
+      output = case @format
         when 'xml'
-          tmpl.to_xml.sub('<hash>','').sub('</hash>','')
+          output.to_xml.sub('<hash>','').sub('</hash>','')
         when 'json'
-          tmpl.to_json
+          output.to_json
         end
+      self.new.instance_eval(output)
     end
 
     private

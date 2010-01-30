@@ -40,6 +40,10 @@ module MockTwitter
     @@reply_to = value
   end
 
+  def self.tweet
+    Lorem::Base.new('chars', 140).output
+  end
+
 
   def self.included(base)
     base.extend ClassMethods

@@ -1,24 +1,24 @@
 statuses:
     status:
-        created_at: Tue Apr 07 22:52:51 +0000 2009
+        created_at: #{created_at}
         id: 1472669360
-        text: At least I can get your humor through tweets. RT @abdur I don't mean this in a bad way but genetically speaking your a cul-de-sac.
-        source: &lt;a href="http://www.tweetdeck.com/">TweetDeck&lt;/a>
+        text: #{text}
+        source: &lt;a href="http://codequietly.com/">MockTwitter&lt;/a>
         truncated: false
         in_reply_to_status_id:
         in_reply_to_user_id:
         favorited: false
-        in_reply_to_screen_name: daneharrigan
+        in_reply_to_screen_name: #{in_reply_to_screen_name}
         user:
             id: 1401881
-            name: Doug Williams
-            screen_name: dougw
+            name: #{name}
+            screen_name: #{screen_name}
             location: San Francisco, CA
-            description: Twitter API Support. Internet, greed, users, dougw and opportunities are my passions
+            description: MockTwitter is an add-on to HTTParty to generate custom Twitter API responses
             profile_image_url: http://s3.amazonaws.com/twitter_production/profile_images/59648642/avatar_normal.png
-            url: http://www.igudo.com
+            url: http://codequietly.com
             protected: false
-            followers_count: 1027
+            followers_count: 1
             profile_background_color: 9ae4e8
             profile_text_color: 000000
             profile_link_color: 0000ff
@@ -34,4 +34,4 @@ statuses:
             statuses_count: 3390
             notifications: false
             following: false
-            verified: true
+            verified: false
