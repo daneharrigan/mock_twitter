@@ -1,4 +1,46 @@
 module MockTwitter
+  @@screen_name = 'mock_twitter'
+  @@display_name = 'Mock Twitter'
+  @@starting_at = 2.minutes.ago
+  @@duration = 2.minutes
+  @@tweet_count = 5
+  @@reply_to = nil
+
+  def self.config
+    yield self
+  end
+
+  def self.screen_name(value=nil)
+    return @@screen_name if value.nil?
+    @@screen_name = value
+  end
+
+  def self.display_name(value=nil)
+    return @@display_name if value.nil?
+    @@display_name = value
+  end
+
+  def self.starting_at(value=nil)
+    return @@starting_at if value.nil?
+    @@starting_at = value
+  end
+
+  def self.duration(value=nil)
+    return @@duration if value.nil?
+    @@duration = value
+  end
+
+  def self.tweet_count(value=nil)
+    return @@tweet_count if value.nil?
+    @@tweet_count = value
+  end
+
+  def self.reply_to(value=nil)
+    return @@reply_to if value.nil?
+    @@reply_to = value
+  end
+
+
   def self.included(base)
     base.extend ClassMethods
   end

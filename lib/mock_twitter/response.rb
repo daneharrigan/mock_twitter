@@ -1,8 +1,18 @@
 module MockTwitter
   class Response
     def self.body(path)
+      create_at = MockTwitter.starting_at
+      text = MockTwitter.tweet
+      in_reply_to_screen_name = MockTwitter.reply_to
+      name = MockTwitter.display_name
+      
       tmpl = YAML.load_file file_path(path)
-      return tmpl.to_xml.sub('<hash>','').sub('</hash>','')
+      return case @format
+        when 'xml'
+          tmpl.to_xml.sub('<hash>','').sub('</hash>','')
+        when 'json'
+          tmpl.to_json
+        end
     end
 
     private
