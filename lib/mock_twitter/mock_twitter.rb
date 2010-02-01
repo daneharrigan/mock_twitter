@@ -21,7 +21,10 @@ module MockTwitter
   end
 
   def self.starting_at(value=nil)
-    return @@starting_at.to_s if value.nil?
+    if value.nil?
+      @@starting_at = @@starting_at - @@duration
+      return @@starting_at.to_s
+    end
     @@starting_at = value
   end
 
