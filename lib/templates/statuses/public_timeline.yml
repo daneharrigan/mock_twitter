@@ -1,37 +1,38 @@
 statuses:
-    status:
-        created_at: #{created_at}
-        id: 1472669360
-        text: #{text}
-        source: &lt;a href="http://codequietly.com/">MockTwitter&lt;/a>
-        truncated: false
-        in_reply_to_status_id:
-        in_reply_to_user_id:
-        favorited: false
-        in_reply_to_screen_name: #{in_reply_to_screen_name}
-        user:
-            id: 1401881
-            name: #{name}
-            screen_name: #{screen_name}
-            location: San Francisco, CA
-            description: MockTwitter is an add-on to HTTParty to generate custom Twitter API responses
-            profile_image_url: http://s3.amazonaws.com/twitter_production/profile_images/59648642/avatar_normal.png
-            url: http://codequietly.com
-            protected: false
-            followers_count: 1
-            profile_background_color: 9ae4e8
-            profile_text_color: 000000
-            profile_link_color: 0000ff
-            profile_sidebar_fill_color: e0ff92
-            profile_sidebar_border_color: 87bc44
-            friends_count: 293
-            created_at: Sun Mar 18 06:42:26 +0000 2007
-            favourites_count: 0
-            utc_offset: -18000
-            time_zone: Eastern Time (US & Canada)
-            profile_background_image_url: http://s3.amazonaws.com/twitter_production/profile_background_images/2752608/twitter_bg_grass.jpg
-            profile_background_tile: false
-            statuses_count: 3390
-            notifications: false
-            following: false
-            verified: false
+  status:
+    created_at: @created_at
+    id: @status_id
+    text: @text
+    source: &lt;a href="http://codequietly.com>MockTwitter&lt;/a>
+    truncated: false
+    in_reply_to_status_id:
+    in_reply_to_user_id:
+    favorited: false
+    in_reply_to_screen_name: @in_reply_to_screen_name
+    user:
+      id: @user_id
+      name: @name
+      screen_name: @screen_name
+      location: San Francisco
+      description: MockTwitter is an add-on to HTTParty to simulate a Twitter API response
+      profile_image_url: http://s3.amazonaws.com/twitter_production/profile_images/59648642/avatar_normal.png
+      url: http://codequietly.com
+      protected: false
+      followers_count: 1027
+      profile_background_color: 9ae4e8
+      profile_text_color: 000000
+      profile_link_color: 0000ff
+      profile_sidebar_fill_color: e0ff92
+      profile_sidebar_border_color: 87bc44
+      friends_count: 293
+      created_at: Sun Mar 18 06:42:26 +0000 2007
+      favourites_count: 0
+      utc_offset: -18000
+      time_zone: Eastern Time (US/Canada)
+      profile_background_image_url: http://s3.amazonaws.com/twitter_production/profile_background_images/2752608/twitter_bg_grass.jpg
+      profile_background_tile: false
+      statuses_count: 3390
+      notifications: false
+      following: false
+      verified: true
+    geo: 

@@ -21,7 +21,7 @@ module MockTwitter
   end
 
   def self.starting_at(value=nil)
-    return @@starting_at if value.nil?
+    return @@starting_at.to_s if value.nil?
     @@starting_at = value
   end
 
@@ -36,7 +36,7 @@ module MockTwitter
   end
 
   def self.reply_to(value=nil)
-    return @@reply_to if value.nil?
+    return @@reply_to.to_s if value.nil?
     @@reply_to = value
   end
 
