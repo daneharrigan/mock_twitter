@@ -1,0 +1,45 @@
+[
+{% repeat %}
+   {
+      "favourites_count":{{ favourites_count }},
+      "description":"{{ description }}",
+      "contributors_enabled":false,
+      "profile_sidebar_fill_color":"fbabfc",
+      "status":{
+         "favorited":false,
+         "in_reply_to_user_id":{{ status_in_reply_to_user_id }},
+         "in_reply_to_status_id":{{ status_in_reply_to_status_id }},
+         "created_at":"{{ status_created_at }}",
+         "source":"MockTwitter",
+         "in_reply_to_screen_name":"{{ status_in_reply_to_screen_name }}",
+         "truncated":false,
+         "id":{{ status_id }},
+         "text":"{{ status_text }}"
+      },
+      "geo_enabled":false,
+      "created_at":"{{ created_at }}",
+      "time_zone":"Pacific Time (US & Canada)",
+      "profile_sidebar_border_color":"829D5E",
+      "verified":false,
+      "profile_image_url":"http://a3.twimg.com/profile_images/190706611/velvet_hanger_twitter_normal.jpg",
+      "lang":"en",
+      "notifications":false,
+      "profile_text_color":"080807",
+      "screen_name":"{{ screen_name }}",
+      "following":false,
+      "profile_background_image_url":"http://a3.twimg.com/profile_background_images/10759077/velvet_hanger_revised_twitter_small.jpg",
+      "followers_count":{{ followers_count }},
+      "protected":false,
+      "profile_link_color":"D02B55",
+      "location":"{{ location }}",
+      "name":"{{ name }}",
+      "profile_background_tile":false,
+      "friends_count":691,
+      "id":{{ id }},
+      "statuses_count":{{ statuses_count }},
+      "utc_offset":-28800,
+      "profile_background_color":"a49998",
+      "url":"{{ url }}"
+   }
+{% endrepeat %}
+]

@@ -15,8 +15,7 @@ In the works
 
 I think this is the order in which I'll create the JSON templates
 
-http://twitter.com/statuses/public_timeline.json
-http://twitter.com/statuses/followers.json
+http://twitter.com/statuses/followers.json (in progess: add group code)
 http://twitter.com/statuses/friends.json
 http://twitter.com/statuses/followers.json
 http://twitter.com/statuses/friends_timeline.json
