@@ -91,9 +91,17 @@ describe MockTwitter do
       @response.should match(/"text":"#{@text}"/)
     end
 
-    context "when config.repeat is set to 5" do
+    context "when config.repeat is set" do
       it "should find my screen_name 5 times" do
         @response.scan(/"screen_name":"daneharrigan"/).length.should == 5
+      end
+
+      it 'should remove the {% repeat %} tag' do
+        @response.match(/\{% repeat %\}/).should be_nil
+      end
+
+      it 'should remove the {% endrepeat %} tag' do
+        @response.match(/\{% endrepeat %\}/).should be_nil
       end
     end
   end

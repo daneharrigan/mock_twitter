@@ -1,26 +1,31 @@
 MockTwitter
 ===========
 
-MockTwitter.config |config|
-	config.set :json_index, <value>
-	config.repeat 5
-end
+MockTwitter generates JSON user defined responses. More is on the way.
+
 
 Example
 =======
 
-Example goes here.
+On the way. They'll most likely be extracted from the RSpec tests.
 
 
-Copyright (c) 2010 [name of plugin creator], released under the MIT license
-
+In the works
+=======
 
 http://twitter.com/statuses/public_timeline.json
 http://twitter.com/statuses/followers.json
 http://twitter.com/statuses/friends.json
 
+
+Completed
+=======
+
 http://twitter.com/statuses/user_timeline.json
-*** http://twitter.com/statuses/show/#{id}.json
-*** http://twitter.com/users/show/#{id}.json
+http://twitter.com/statuses/show/#{id}.json
+http://twitter.com/users/show/#{id}.json
 
 Great tool for making JSON readable: http://jsonformatter.curiousconcept.com/
+
+
+Copyright (c) 2010 Dane Harrigan, released under the MIT license
