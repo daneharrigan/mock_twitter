@@ -1,8 +1,10 @@
 MockTwitter
 ===========
 
-Introduction goes here.
-
+MockTwitter.config |config|
+	config.set :json_index, <value>
+	config.repeat 5
+end
 
 Example
 =======
@@ -11,3 +13,14 @@ Example goes here.
 
 
 Copyright (c) 2010 [name of plugin creator], released under the MIT license
+
+
+http://twitter.com/statuses/public_timeline.json
+http://twitter.com/statuses/followers.json
+http://twitter.com/statuses/friends.json
+
+http://twitter.com/statuses/user_timeline.json
+*** http://twitter.com/statuses/show/#{id}.json
+*** http://twitter.com/users/show/#{id}.json
+
+Great tool for making JSON readable: http://jsonformatter.curiousconcept.com/
