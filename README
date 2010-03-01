@@ -13,9 +13,57 @@ On the way. They'll most likely be extracted from the RSpec tests.
 In the works
 =======
 
+I think this is the order in which I'll create the JSON templates
+
 http://twitter.com/statuses/public_timeline.json
 http://twitter.com/statuses/followers.json
 http://twitter.com/statuses/friends.json
+http://twitter.com/statuses/followers.json
+http://twitter.com/statuses/friends_timeline.json
+http://twitter.com/statuses/replies.json
+http://twitter.com/statuses/destroy/#{id}.json
+http://twitter.com/statuses/update.json
+http://twitter.com/statuses/user_timeline.json
+
+http://twitter.com/blocks/create/#{id}.json
+http://twitter.com/blocks/blocking/ids.json
+http://twitter.com/blocks/destroy/#{id}.json
+
+http://twitter.com/direct_messages/new.json
+http://twitter.com/direct_messages/destroy/#{id}.json
+http://twitter.com/direct_messages.json
+http://twitter.com/direct_messages/sent.json
+
+http://twitter.com/notifications/leave/#{id}.json
+http://twitter.com/notifications/follow/#{id}.json
+
+http://twitter.com/favorites/create/#{id}.json
+http://twitter.com/favorites/destroy/#{id}.json
+http://twitter.com/favorites.json
+
+http://twitter.com/friends/ids/#{id}.json
+http://twitter.com/friends/ids.json
+
+http://twitter.com/friendships/create/#{id}.json
+http://twitter.com/friendships/destroy/#{id}.json
+http://twitter.com/friendships/exists.json
+
+http://twitter.com/account/update_delivery_device.json
+http://twitter.com/account/update_profile.json
+http://twitter.com/account/update_profile_colors.json
+http://twitter.com/account/verify_credentials.json
+
+http://twitter.com/followers/ids.json
+
+http://twitter.com/users/show/#{id}.json
+
+http://twitter.com/current.json
+http://twitter.com/daily.json
+http://twitter.com/weekly.json
+
+http://twitter.com/help/test.json
+
+http://search.twitter.com/search.json
 
 
 Completed
