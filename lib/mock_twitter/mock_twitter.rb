@@ -22,7 +22,7 @@ module MockTwitter
 
       if output.match(/\{% repeat %\}/) && @repeat
         repetitions = []
-        match = output.match /\{% repeat %\}[^\{% endrepeat %\}](.*)/m
+        match = output.match /\{% repeat %\}[^\{% endrepeat %\}](.*)\{% endrepeat %\}/m
         @repeat.times { repetitions << set_values(match[1]) }
         output.sub!(match[0], repetitions.join(','))
       end
